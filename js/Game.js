@@ -89,6 +89,7 @@ class Game {
     if(player.distance > 3770){
       gameState = 2;
       player.rank=player.rank+1;
+     text("Rank: "+player.rank,100,-3100);
       player.updatedFinishedPlayers();
     }
    console.log(player.rank);
@@ -97,11 +98,9 @@ class Game {
   }
 
   end(){
-    console.log("Game Ended" + player.rank);
-    textSize(35);
-        // fill("red");
-        // stroke("green");
-        text("Rank: "+player.rank,100,-3100);
-        gameState=3;
+    console.log("Game Ended");
+
+      
+      
   }
 }
